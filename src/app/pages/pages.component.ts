@@ -35,7 +35,7 @@ export class PagesComponent implements OnInit, OnDestroy {
       .pipe(takeUntil(this.destroy$))
       .subscribe((data: { tag: string; item: NbMenuItem }) => {
         if (data.item.title !== 'E-commerce' && data.item.title !== 'IoT Dashboard')
-          this.metaDataService.updateTitle(`Ngx-admin dashboard by Akveo| ${data.item.title}`);
+          this.metaDataService.updateTitle(`Ngx-admin dashboard by Akveo | ${data.item.title}`);
       });
   }
 
